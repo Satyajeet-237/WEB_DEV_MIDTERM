@@ -93,11 +93,12 @@ margin:0px 10%;
 }
 
 #message_box{
-    margin: 15%;
+    margin:15%;
+    padding: 2em;
     position: absolute;
     background-color: #cccccc;
-    height: 50%;
-    width: 50%;
+    height: 10%;
+    width: 10%;
 }
 
 #h1contact{
