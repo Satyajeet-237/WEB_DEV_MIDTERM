@@ -26,10 +26,8 @@ position: fixed;
     height:40px;
     min-width: 100px;
     text-align: center;
-    padding-top:10px ;
+    padding-top:20px ;
     text-transform: capitalize;
-    border-style: double;
-    border-radius: 60px;
     text-shadow: 2px 2px 5px red;​
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
     font-weight:600;
@@ -44,24 +42,24 @@ margin:0px 10%;
 
 #p1{
     background-image: url(images/bg1.jpg);
-    background-size: cover;
+    background-size:cover;
 }
-/*
+
 #p2{
     background-image: url(images/bg2.jpg);
-    background-size: cover;
+    background-size:cover;
 }
 
 #p3{
     background-image: url(images/bg3.jpg);
-    background-size: cover;
+    background-size:cover;
 }
 
 #p4{
     background-image: url(images/bg4.jpg);
-    background-size: cover;
+    background-size:cover;
 }
-*/
+
 
 .flex-container a{
     text-decoration: none;
@@ -92,4 +90,20 @@ margin:0px 10%;
 
 #item3{
     grid-row: 8/11;
+}
+
+#message_box{
+    margin: 15%;
+    position: absolute;
+    background-color: #cccccc;
+    height: 50%;
+    width: 50%;
+}
+
+#h1contact{
+    padding-top: 5%;
+    font-size: xxx-large;
+    text-align:center;
+    text-decoration: underline;
+
 }
