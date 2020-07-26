@@ -1,6 +1,3 @@
-/* PLease note that i am still adding more and more stuff while my present file contains use of font styling,margin,padding,border,flexbox,
-Shadows,grid and also the top navigation bar. So have used 7 of the 12 required tools all in navbar itself */
-
 
 *{
     margin:0px;
@@ -41,23 +38,19 @@ margin:0px 10%;
 }
 
 #p1{
-    background-image: url(images/bg1.jpg);
-    background-size:cover;
+    background-color:#111;
 }
 
 #p2{
-    background-image: url(images/bg2.jpg);
-    background-size:cover;
+    background-color:#111;
 }
 
 #p3{
-    background-image: url(images/bg3.jpg);
-    background-size:cover;
+    background-color:#111;
 }
 
 #p4{
-    background-image: url(images/bg4.jpg);
-    background-size:cover;
+    background-color:#111;
 }
 
 
@@ -95,10 +88,8 @@ margin:0px 10%;
 #message_box{
     margin:15%;
     padding: 2em;
-    position: absolute;
-    background-color: #cccccc;
-    height: 10%;
-    width: 10%;
+    height: 20vmin;
+    width: 20vmin;
 }
 
 #h1contact{
@@ -108,3 +99,76 @@ margin:0px 10%;
     text-decoration: underline;
 
 }
+
+body{
+    color:white;
+    margin: 0;
+    padding: 0;
+    background: #262626;
+    font-family: sans-serif;
+    }
+    
+    .container{
+    width: 1280px;
+    padding: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    
+    .container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    }
+    
+    .container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+    }
+    
+    .container .box .imgBox img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    transition: transform 2s;
+    }
+    
+    .container .box:hover .imgBox img{
+    transform: scale(1.2);
+    }
+    
+    .container .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+    }
+    
+    .container .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    }
+    
+    .container .box:hover .details{
+    transform: scaleY(1);
+    }
+    
+    .container .box .details .content h2{
+    margin : 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+    }
